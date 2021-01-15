@@ -1,6 +1,5 @@
-package com.transpos.market.aop
+package com.tranpos.vpos.aop
 
-import com.tranpos.vpos.aop.AopClickUtil
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
 import org.aspectj.lang.annotation.Aspect
@@ -17,7 +16,7 @@ class AopClickAspect {
     /**
      * 定义切点，标记切点为所有被@AopOnclick注解的方法
      */
-    @Pointcut("execution(@com.transpos.market.aop.AopOnclick * *(..))")
+    @Pointcut("execution(@com.tranpos.vpos.aop.AopOnclick * *(..))")
     fun methodAnnotated() {
     }
 

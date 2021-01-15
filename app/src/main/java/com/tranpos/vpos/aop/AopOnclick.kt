@@ -1,4 +1,4 @@
-package com.transpos.market.aop
+package com.tranpos.vpos.aop
 
 /**
  *CREATED BY AM
