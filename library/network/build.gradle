@@ -54,5 +54,6 @@ dependencies {
     api 'org.koin:koin-androidx-viewmodel:2.0.1'
     api "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-rc03"
     api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-rc03"
+    api project(':library:tools')
 
 }

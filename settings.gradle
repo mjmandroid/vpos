@@ -1,3 +1,5 @@
+include ':library:thread'
+include ':library:tools'
 include ':library:network'
 include ':app'
 rootProject.name = "vpos"
