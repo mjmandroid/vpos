@@ -25,6 +25,7 @@ object RequestManager {
         this.baseUrl = baseUrl
         this.headers = HeaderInterceptor()
         this.requestDsl = requestDsl
+        init(requestDsl)
     }
 
     private fun init(requestDSL: (RequestDsl.() -> Unit)? = null) {

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bgColor" format="color" />
+    <!--自定义加载框-->
+    <declare-styleable name="LVCircularRing">
+        <attr name="bgColor" />
+        <attr name="barColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RoundButton">
+        <!-- 背景色 -->
+        <attr name="btn_normalSolidColor" format="color" />
+        <!--按下的背景色-->
+        <attr name="btn_pressedSolidcolor" format="color" />
+        <!--unable背景色-->
+        <attr name="btn_unableSolidcolor" format="color" />
+        <!--文字颜色-->
+        <attr name="btn_normalTextcolor" format="color" />
+        <!--文字按下的颜色-->
+        <attr name="btn_pressedTextcolor" format="color" />
+        <!--unable文字颜色-->
+        <attr name="btn_unableTextcolor" format="color" />
+
+        <!-- 边框色 -->
+        <attr name="btn_normalStrokeColor" format="color" />
+        <!--按下的边框颜色-->
+        <attr name="btn_pressedStokeColor" format="color" />
+        <attr name="btn_unableStrokeColor" format="color" />
+        <!-- 边框厚度 -->
+        <attr name="btn_normalStrokeWidth" format="dimension" />
+        <!--按下的边框线宽-->
+        <attr name="btn_pressedStrokeWidth" format="dimension" />
+        <!--unable-->
+        <attr name="btn_unableStrokeWidth" format="dimension" />
+        <!-- 边框虚线长度 -->
+        <attr name="btnStrokeDashWidth" format="dimension" />
+        <!-- 边框虚线间隙 -->
+        <attr name="btnStrokeDashGap" format="dimension" />
+        <!-- 圆角半径，stadium 表示半径为 min(height,width) / 2-->
+        <attr name="btnCornerRadius" format="dimension">
+            <enum name="stadium" value="-1" />
+        </attr>
+        <attr name="btn_gradient_orientation" format="integer">
+            <enum name="top_bottom" value="1" />
+            <enum name="left_right" value="2" />
+        </attr>
+        <!-- 自动计算按下(pressed)状态颜色的系数, 值为0时不自动计算 -->
+        <attr name="btnPressedRatio" format="float" />
+        <attr name="btn_is_gradient" format="boolean" />
+        <attr name="btn_gradient_colors" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension" />
+        <attr name="btnTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ScoreCircle">
+        <attr name="android_layout_width" format="dimension" />
+        <attr name="android_layout_height" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="stroke" format="dimension" />
+        <attr name="firstCircleColor" format="color" />
+        <attr name="sendColorStart" format="color" />
+        <attr name="sendColorEnd" format="color" />
+        <attr name="front_color" format="color" />
+        <attr name="front_size" format="dimension" />
+        <attr name="bottom_txt" format="string" />
+        <attr name="bottom_txt_dimension" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LeftRightCircle">
+        <attr name="left_color" format="color" />
+        <attr name="right_color" format="color" />
+        <attr name="circle_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="StatisticsHorizontalTab">
+        <attr name="inc_items" format="string" />
+        <attr name="inc_item_width" format="dimension" />
+        <attr name="inc_item_amount" format="integer" />
+        <attr name="inc_radius" format="dimension" />
+        <attr name="inc_txt_check_color" format="color" />
+        <attr name="inc_txt_uncheck_color" format="color" />
+        <attr name="inc_stroke_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PopHeadView">
+        <attr name="frame" format="boolean" />
+        <attr name="default_content" format="string"/>
+    </declare-styleable>
+    <attr name="check_img" format="reference"/>
+    <attr name="uncheck_img" format="reference"/>
+    <attr name="symbol_color" format="color"/>
+    <declare-styleable name="CStateImageView">
+        <attr name="check_img" />
+        <attr name="uncheck_img" />
+    </declare-styleable>
+    <declare-styleable name="CCheckBoxLayout">
+        <attr name="check_img" />
+        <attr name="uncheck_img" />
+        <attr name="check_state" format="boolean"/>
+        <attr name="box_text" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="flFlow" format="boolean"/>
+        <attr name="flChildSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="flMinChildSpacing" format="dimension"/>
+        <attr name="flChildSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+            <enum name="align" value="-65537"/>
+        </attr>
+        <attr name="flRowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="flRtl" format="boolean"/>
+        <attr name="flMaxRows" format="integer"/>
+        <attr name="flRowVerticalGravity" format="enum">
+            <enum name="auto" value="-65536"/>
+            <enum name="top" value="0x30"/>
+            <enum name="center" value="0x10"/>
+            <enum name="bottom" value="0x50"/>
+        </attr>
+        <attr name="android:gravity"/>
+    </declare-styleable>
+    <declare-styleable name="CSymbolSubView">
+        <attr name="symbol_color"/>
+    </declare-styleable>
+    <declare-styleable name="CSymbolAddView">
+        <attr name="symbol_color"/>
+    </declare-styleable>
+
+    <!--阴影布局 -->
+    <declare-styleable name="ShadowLayout">
+        <!-- 阴影颜色-->
+        <attr name="shadowColor" format="color"/>
+        <!-- 圆角大小，默认无圆角0-->
+        <attr name="shadowRadius" format="dimension"/>
+        <!-- 模糊半径 -->
+        <attr name="blurRadius" format="dimension" />
+        <!-- 是否有点击效果-->
+        <attr name="hasEffect" format="boolean"/>
+        <attr name="bgColor"/>
+        <!-- 水平位移-->
+        <attr name="xOffset" format="dimension"/>
+        <!--竖直位移 -->
+        <attr name="yOffset" format="dimension"/>
+
+    </declare-styleable>
+</resources>

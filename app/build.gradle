@@ -76,5 +76,5 @@ dependencies {
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$LEAKCANARY_VERSION"
     implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${ADAPTER_VERSION}"
     implementation "org.apache.commons:commons-lang3:${LANG3_VERSION}"
-    implementation "com.android.support:multidex:${MULTIDEX_VERSION}"
+    implementation "androidx.multidex:multidex:${MULTIDEX_VERSION}"
 }

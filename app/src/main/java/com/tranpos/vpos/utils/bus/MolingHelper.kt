@@ -2,9 +2,9 @@ package com.tranpos.vpos.utils.bus
 
 import android.util.Log
 import com.tranpos.vpos.base.BaseApp
-import com.tranpos.vpos.utils.KeyConstrant
 import com.tranpos.vpos.entity.MolingSetting
 import com.tranpos.vpos.entity.MolingType
+import com.tranpos.vpos.utils.KeyConstrant
 import com.tranpos.vpos.utils.StringKotlin
 import com.transpos.tools.tputils.TPUtils
 import kotlin.math.*

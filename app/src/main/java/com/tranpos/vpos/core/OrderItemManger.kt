@@ -8,8 +8,8 @@ import com.tranpos.vpos.db.manger.ProductContractDbManger
 import com.tranpos.vpos.db.manger.PromotionTicketDbManger
 import com.tranpos.vpos.entity.*
 import com.tranpos.vpos.utils.DateUtil
-import com.tranpos.vpos.utils.KeyConstrant
 import com.tranpos.vpos.utils.IdWorkerUtils
+import com.tranpos.vpos.utils.KeyConstrant
 import com.tranpos.vpos.utils.StringKotlin
 import com.transpos.tools.GsonHelper
 import com.transpos.tools.logger.Logger

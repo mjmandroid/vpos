@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_view"
+    tools:viewBindingIgnore="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <FrameLayout
+        android:background="@drawable/shape_r5"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/dp_60">
+        <com.tranpos.vpos.wedget.LVCircularRing
+            android:layout_gravity="center"
+            android:id="@+id/lvcr_loading"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            app:barColor="#1FC1B3"
+            app:bgColor="#551FC1B3"/>
+        <TextView
+            android:id="@+id/loading_text"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+</LinearLayout>

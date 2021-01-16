@@ -8,10 +8,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
 import java.lang.reflect.ParameterizedType
 
-class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatActivity(),IBaseView{
+open class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatActivity(),IBaseView{
     lateinit var mContext: FragmentActivity
     lateinit var vm: VM
-    lateinit var v: VB
+    lateinit var binding: VB
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,9 +23,9 @@ class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatActivity(),I
 
         val clazz2 = type.actualTypeArguments[1] as Class<VB>
         val method = clazz2.getMethod("inflate", LayoutInflater::class.java)
-        v = method.invoke(null, layoutInflater) as VB
+        binding = method.invoke(null, layoutInflater) as VB
 
-        setContentView(v.root)
+        setContentView(binding.root)
 
         initView()
         initClick()
@@ -33,19 +33,19 @@ class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatActivity(),I
         initVM()
     }
 
-    protected fun initData() {
+    protected open fun initData() {
 
     }
 
-    protected fun initClick(){
+    protected open fun initClick(){
 
     }
 
-    protected fun initView() {
+    protected open fun initView() {
 
     }
 
-    protected fun initVM(){
+    protected open fun initVM(){
 
     }
 

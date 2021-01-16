@@ -7,8 +7,8 @@ import com.tranpos.vpos.entity.state.OrderPaymentStatusFlag
 import com.tranpos.vpos.entity.state.PayChannelFlag
 import com.tranpos.vpos.utils.DateUtil
 import com.tranpos.vpos.utils.IdWorkerUtils
-import com.tranpos.vpos.utils.KeyConstrant
 import com.tranpos.vpos.db.manger.OrderPayDbManger
+import com.tranpos.vpos.utils.KeyConstrant
 import com.transpos.tools.tputils.TPUtils
 
 object OrderPayManger {
