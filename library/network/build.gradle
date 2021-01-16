@@ -55,5 +55,6 @@ dependencies {
     api "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-rc03"
     api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-rc03"
     api project(':library:tools')
+    api project(':library:thread')
 
 }

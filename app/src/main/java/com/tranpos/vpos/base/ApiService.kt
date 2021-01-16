@@ -18,4 +18,7 @@ interface ApiService {
 
     @POST(".")
     suspend fun doLogin(@Body body : RequestBody) : BaseResult<Worker>
+
+    @POST(".")
+    suspend fun obtainServerDataVersion(@Body body : RequestBody) : BaseListResponse<Map<String, String>>
 }

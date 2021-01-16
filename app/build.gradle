@@ -69,7 +69,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_extensions_version"
     implementation project(':library:network')
-    implementation project(':library:thread')
     implementation "org.aspectj:aspectjrt:$AOP_VERSION"
     implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"
     kapt "android.arch.persistence.room:compiler:$ROOM_VERSION"

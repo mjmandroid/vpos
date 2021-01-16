@@ -13,4 +13,9 @@ class MainActivity : BaseActivity<MainModel,ActivityMainBinding>() {
     override fun initView() {
         super.initView()
     }
+
+    override fun initData() {
+        super.initData()
+
+    }
 }
